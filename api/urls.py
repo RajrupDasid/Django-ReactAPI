@@ -5,5 +5,5 @@ from django.conf.urls import include
 from django.conf.urls.static import static
 urlpatterns = [
     path('admin/', admin.site.urls),
-]+static(settings.MDEIA_URL,document_root=settings.MEDIA_ROOT)
-urlpatterns+=static(settings.STATIC_URL,document_root=settings.STATTIC_ROOT)
+]+static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
+urlpatterns+=static(settings.STATIC_URL,document_root=settings.STATIC_ROOT)
